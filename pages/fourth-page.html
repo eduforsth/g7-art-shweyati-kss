@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="my">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>သင်ခန်းစာ ၁| မျက်နှာပြင်နိမ့်မြင့်ပြမျဉ်းများရေးဆွဲခြင်း</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <style>
+    .detail-page {
+      min-height: 100vh;
+      padding: 125px 0 80px;
+      background: linear-gradient(180deg, #edf2e8, #faf9f4)
+    }
+
+    .detail-shell {
+      max-width: 900px;
+      margin: auto
+    }
+
+    .detail-panel {
+      background: #fffefa;
+      border: 1px solid #e4e9dc;
+      border-radius: 18px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 18px 50px #1c3a2410
+    }
+
+    .detail-number {
+      display: inline-block;
+      background: #edf3e6;
+      color: #567244;
+      border-radius: 99px;
+      padding: 5px 13px;
+      font-size: 12px;
+      margin-bottom: 14px
+    }
+
+    .detail-panel h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin: 0 0 18px
+    }
+
+    .detail-panel p {
+      color: #617067;
+      line-height: 2.1
+    }
+
+    .detail-panel h2 {
+      font-size: 22px;
+      margin: 30px 0 12px
+    }
+
+    .detail-visual {
+      height: 190px;
+      border-radius: 13px;
+      background: linear-gradient(140deg, #dfeadf, #abc5a6);
+      margin: 20px 0;
+      display: grid;
+      place-items: center;
+      font-size: 72px;
+      color: #45674d
+    }
+
+    .lesson-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px
+    }
+
+    .lesson-links a {
+      padding: 15px;
+      border: 1px solid #e4e9dc;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #355842;
+      background: white
+    }
+
+    .lesson-links a:hover {
+      background: #f2f6ec
+    }
+
+    .detail-quiz {
+      margin-top: 38px;
+      background: #214c39;
+      color: #fff;
+      border-radius: 15px;
+      padding: clamp(22px, 4vw, 36px)
+    }
+
+    .detail-quiz h2 {
+      margin-top: 0
+    }
+
+    .detail-quiz p {
+      color: #e0e9df
+    }
+
+    .quiz-card {
+      box-shadow: none
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: #45674d;
+      text-decoration: none
+    }
+
+    @media(max-width:767px) {
+      .lesson-links {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container"><a class="navbar-brand d-flex align-items-center gap-2" href="../index.html"><span
+          class="brand-mark">မြေ</span><span>အနုပညာ(ပန်းချီ)<span class="brand-sub">သတ္တမတန်း
+            ပန်းချီ</span></span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="မီနူးဖွင့်ရန်"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">ပင်မစာမျက်နှာ</a></li>
+          <li class="nav-item"><a class="nav-link" href="../questions.html">မေးခွန်းများ</a></li>
+          <li class="nav-item"><a class="nav-link" href="../knowledge.html">ဗဟုတုသ</a></li>
+
+      </div>
+    </div>
+  </nav>
+  <main class="detail-page">
+    <div class="container detail-shell">
+      <a class="back-link" href="../index.html#lesson">← သင်ခန်းစာများသို့ ပြန်သွားရန်</a>
+      <section class="detail-panel" id="introduction"><span class="detail-number" id="detailNumber">သင်ခန်းစာ</span>
+        <!-- <div class="detail-visual" id="detailVisual" aria-hidden="true">⌁</div> -->
+        <h1 id="detailTitle">မြေပြင်ဖြစ်စဉ်များ</h1>
+        <p id="detailDescription" style="font-size: larger;">
+          အရာဝတ္ထု၏​ဘေးအနားသတ်ပုံ​ပေါ်​အောင်​ရေးဆွဲပြီး​နောက်အရာဝတ္ထု၏ထုထည်ခုံးခွက်​ပေါ်မူတည်ပြီးအလျားလိုက်သို့မဟုတ်​ဒေါင်လိုက်မျက်နှာပြင်နိမ့်မြင့်ပြမျဥ်းများ​ရေးဆွဲရသည်။
+        </p>
+
+        <img src="../assets/images/vava.png" alt="description"
+          style="border: 1px solid grey; border-radius: 20px; width: 50%; height: 150px;">
+
+        <h2>မှတ်သားရန်</h2>
+        <p id="detailNote" style="font-size: larger;">သဘာဝဖြစ်စဉ်များသည် ကမ္ဘာ့မြေပြင်ကို အချိန်ကြာလာသည်နှင့်အမျှ
+          ပြောင်းလဲစေသည်။</p>
+      </section>
+      <section id="lessons">
+
+
+
+
+        <div class="section-kicker light-kicker">လေ့ကျင့်ခန်း</div>
+        <h2>မျက်နှာပြင်များကို​လေ့​လာ​ရေးဆွဲခြင်း</h2>
+        <p>မေးခွန်းတစ်ခုစီအတွက် အဖြေမှန်တစ်ခုကို ရွေးပါ။</p>
+        <div class="quiz-question">
+          <h3>၁။ အရာဝတ္ထု၏ ထုထည်ပေါ်လွင်စေရန် မည်သည့်မျဉ်းများကို အသုံးပြုသနည်း။</h3>
+          <div class="quiz-options"><button class="answer-option" data-answer="wrong"><span
+                class="option-letter">က</span>စာရေးမျဉ်းများ</button><button class="answer-option"
+              data-answer="wrong"><span class="option-letter">ခ</span>အရောင်မျဉ်းများ</button><button
+              class="answer-option" data-answer="correct"><span
+                class="option-letter">ဂ</span>မျက်နှာပြင်နိမ့်မြင့်ပြမျဉ်းများ</button></div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </div>
+        <div class="quiz-question">
+          <h3>၂။ မျက်နှာပြင်နိမ့်မြင့်ပြမျဉ်းများကို မည်သည့်ပုံစံဖြင့် ဆွဲနိုင်သနည်း။</h3>
+          <div class="quiz-options"><button class="answer-option" data-answer="wrong"><span
+                class="option-letter">က</span>စက်ဝိုင်းပုံသာ</button><button class="answer-option"
+              data-answer="correct"><span class="option-letter">ခ</span>အလျားလိုက် သို့မဟုတ် ဒေါင်လိုက်</button><button
+              class="answer-option" data-answer="wrong"><span
+                class="option-letter">ဂ</span>ထောင့်ဖြတ်ပုံသာ</button></div>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </div>
+
+
+      </section>
+
+    </div>
+  </main>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    const topics = { weathering: { number: 'သင်ခန်းစာ ၁', title: 'ကျောက်ဆွေးမြည့်ခြင်း', icon: '⌁', description: 'အပူချိန်ပြောင်းလဲမှု၊ မိုးရေနှင့် လေတို့ကြောင့် ကျောက်တုံးများသည် မူလနေရာတွင်ပင် အက်ကွဲပြီး သေးငယ်သော အပိုင်းအစများ ဖြစ်လာသည်။', note: 'ကျောက်ဆွေးမြည့်ခြင်းသည် ကျောက်ကို နေရာမရွှေ့ဘဲ အရွယ်အစားသေးငယ်စေသော ဖြစ်စဉ်ဖြစ်သည်။' }, erosion: { number: 'သင်ခန်းစာ ၂', title: 'မျက်နှာပြင်နိမ့်မြင့်ပြမျဉ်းများရေးဆွဲခြင်း', icon: '↗', description: 'မျက်နှာပြင်နိမ့်မြင့်ပြမျဉ်းများဖြင့် ရေးဆွဲခြင်း', note: 'အဓိကအချက်အခြေခံထုထည်များနှင့် အရာဝတ္ထုမျက်နှာပြင်များကို လိုက်ဖက်သောမျဉ်းများဖြင့် ပုံဖော်ရသည်' }, deposition: { number: 'သင်ခန်းစာ ၃', title: 'အနည်ကျ စုပုံခြင်း', icon: '⌄', description: 'သယ်ဆောင်လာသော အနည်များသည် မြစ်ဝနှင့် ကမ်းခြေကဲ့သို့ နေရာများတွင် စုပုံကာ မြေပြင်ပုံစံအသစ်များ ဖြစ်လာစေသည်။', note: 'ရေစီးနှေးသွားသောအခါ သယ်ဆောင်လာသည့် အနည်များ ကျန်ရစ်စုပုံတတ်သည်။' } };
+    const topic = topics[new URLSearchParams(location.search).get('topic') || 'erosion']; if (topic) { document.getElementById('detailNumber').textContent = topic.number; document.getElementById('detailTitle').textContent = topic.title; document.getElementById('detailVisual').textContent = topic.icon; document.getElementById('detailDescription').textContent = topic.description; document.getElementById('detailNote').textContent = topic.note; }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="my">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>သင်ခန်းစာ | ကမ္ဘာ့ပုံပြင်များ</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <style>
+    .detail-page {
+      min-height: 100vh;
+      padding: 125px 0 80px;
+      background: linear-gradient(180deg, #edf2e8, #faf9f4)
+    }
+
+    .detail-shell {
+      max-width: 900px;
+      margin: auto
+    }
+
+    .detail-panel {
+      background: #fffefa;
+      border: 1px solid #e4e9dc;
+      border-radius: 18px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 18px 50px #1c3a2410
+    }
+
+    .detail-number {
+      display: inline-block;
+      background: #edf3e6;
+      color: #567244;
+      border-radius: 99px;
+      padding: 5px 13px;
+      font-size: 12px;
+      margin-bottom: 14px
+    }
+
+    .detail-panel h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      margin: 0 0 18px
+    }
+
+    .detail-panel p {
+      color: #617067;
+      line-height: 2.1
+    }
+
+    .detail-panel h2 {
+      font-size: 22px;
+      margin: 30px 0 12px
+    }
+
+    .detail-visual {
+      height: 190px;
+      border-radius: 13px;
+      background: linear-gradient(140deg, #dfeadf, #abc5a6);
+      margin: 20px 0;
+      display: grid;
+      place-items: center;
+      font-size: 72px;
+      color: #45674d
+    }
+
+    .lesson-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px
+    }
+
+    .lesson-links a {
+      padding: 15px;
+      border: 1px solid #e4e9dc;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #355842;
+      background: white
+    }
+
+    .lesson-links a:hover {
+      background: #f2f6ec
+    }
+
+    .detail-quiz {
+      margin-top: 38px;
+      background: #214c39;
+      color: #fff;
+      border-radius: 15px;
+      padding: clamp(22px, 4vw, 36px)
+    }
+
+    .detail-quiz h2 {
+      margin-top: 0
+    }
+
+    .detail-quiz p {
+      color: #e0e9df
+    }
+
+    .quiz-card {
+      box-shadow: none
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: #45674d;
+      text-decoration: none
+    }
+
+    .lesson-links a {
+      position: relative;
+      min-height: 136px;
+      padding: 20px 18px 16px 58px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px #1b31210b;
+      font-size: 14px;
+      line-height: 1.8;
+      transition: transform .18s, box-shadow .18s
+    }
+
+    .lesson-links a:before {
+      position: absolute;
+      left: 16px;
+      top: 18px;
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      background: #fff0e8;
+      color: #e96838;
+      font-size: 16px;
+      font-weight: 700
+    }
+
+    .lesson-links a:nth-child(1):before {
+      content: '⌁'
+    }
+
+    .lesson-links a:nth-child(2):before {
+      content: '↗';
+      background: #edf5ff;
+      color: #508cde
+    }
+
+    .lesson-links a:nth-child(3):before {
+      content: '◉';
+      background: #fff0f7;
+      color: #d55390
+    }
+
+    .lesson-links a:after {
+      content: 'EARTH SCIENCE · BEGINNER';
+      display: block;
+      margin-top: 9px;
+      color: #89928d;
+      font-size: 9px;
+      letter-spacing: .5px
+    }
+
+    .lesson-links a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px #1b312116;
+      background: white
+    }
+
+    @media(min-width:768px) {
+      .lesson-links {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    @media(max-width:767px) {
+      .lesson-links {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container"><a class="navbar-brand d-flex align-items-center gap-2" href="../index.html"><span
+          class="brand-mark">ပန်းချီ</span><span>အနုပညာ(ပန်းချီ)<span class="brand-sub">သတ္တမတန်း
+            ပထဝီဝင်</span></span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="မီနူးဖွင့်ရန်"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">ပင်မစာမျက်နှာ</a></li>
+          <li class="nav-item"><a class="nav-link" href="../questions.html">မေးခွန်း</a></li>
+          <li class="nav-item"><a class="nav-link" href="../knowledge.html">ဗဟုသုတ</a></li>
+      </div>
+    </div>
+  </nav>
+  <main class="detail-page">
+    <div class="container detail-shell">
+      <a class="back-link" href="../index.html#lesson">← သင်ခန်းစာများသို့ ပြန်သွားရန်</a>
+      <section class="detail-panel" id="introduction"><span class="detail-number" id="detailNumber">သင်ခန်းစာ</span>
+        <!-- <div class="detail-visual" id="detailVisual" aria-hidden="true">⌁</div> -->
+        <h1 id="detailTitle">နီးဝေးမြင်ပုံမှန်စနစ်ဖြင့်ရေးဆွဲခြင်း</h1>
+
+        <img src="../assets/images/popo.png" alt="description"
+          style="border: 1px solid grey; border-radius: 20px; width: 50%; height: 150px;">
+
+
+        <p id="detailDescription" style="font-size: larger;">
+          နီး​ဝေးမြင်ပုံမှန်စနစ်ဆိုသည်မှာအရာဝတ္ထုများကိုနီးလျှင်ကြီးပြီး​ဝေးလျှင်​သေး၍မြင်ရသည့်သ​ဘောအတိုင်း​ရေးဆွဲခြင်းကိုဆိုလိုသည်။
+        </p>
+        <h2>မှတ်သားရန်</h2>
+        <p id="detailNote" style="font-size: larger;">
+          ​ပျောက်ကွယ်စက်တစ်စက်ပါနီး​ဝေးမြင်ပုံမှန်စနစ်ကိုအသုံးပြုပြီးအရာဝတ္ထုများကို​ရေးဆွဲရသည်။</p>
+      </section>
+
+
+
+
+      <div class="section-kicker light-kicker" style="font-size: larger;">လေ့ကျင့်ခန်း</div>
+      <h2>မျက်နှာပြင်များကို​လေ့​လာ​ရေးဆွဲခြင်း</h2>
+      <p>မေးခွန်းတစ်ခုစီအတွက် အဖြေမှန်တစ်ခုကို ရွေးပါ။</p>
+      <div class="quiz-question">
+        <h3>၁။ မျဉ်းပြိုင်ရှုထောင့်စနစ်တွင် ပျောက်ကွယ်မှတ် (Vanishing Point) မည်မျှရှိသနည်း။</h3>
+        <div class="quiz-options"><button class="answer-option" data-answer="correct"><span
+              class="option-letter">က</span>တစ်ခု</button><button class="answer-option" data-answer="wrong"><span
+              class="option-letter">ခ</span>နှစ်ခု</button><button class="answer-option" data-answer="wrong"><span
+              class="option-letter">ဂ</span>သုံးခု</button></div>
+        <p class="quiz-feedback" aria-live="polite"></p>
+      </div>
+      <div class="quiz-question">
+        <h3>၂။ မျဉ်းပြိုင်ရှုထောင့်စနစ်တွင် အခြားမျက်နှာပြင်များကို မည်သည့်မျဉ်းများဖြင့် ရေးဆွဲသနည်း။</h3>
+        <div class="quiz-options"><button class="answer-option" data-answer="wrong"><span class="option-letter">က</span>
+            ကွေးညွတ်မျဉ်းများ</button><button class="answer-option" data-answer="correct"><span
+              class="option-letter">ခ</span>အလျားလိုက်နှင့် ဒေါင်လိုက် မျဉ်းပြိုင်များ</button><button
+            class="answer-option" data-answer="wrong"><span class="option-letter">ဂ</span>စက်ဝိုင်းမျဉ်းများ</button>
+        </div>
+        <p class="quiz-feedback" aria-live="polite"></p>
+      </div>
+
+
+  </main>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+
+</body>
+
+</html>
